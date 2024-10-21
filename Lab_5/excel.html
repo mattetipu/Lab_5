@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Page</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="excel.html">Excel</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="excel-form">
+            <label for="numbers">Enter your numbers separated by spaces: </label><br>
+            <input type="text" id="numbers" required><br><br>
+
+            <label>Choose an Excel Function:</label><br>
+            <input type="radio" id="autosum" name="excelFunction" value="AutoSum" checked>
+            <label for="autosum">AutoSum</label><br>
+            <input type="radio" id="average" name="excelFunction" value="Average">
+            <label for="average">Average</label><br>
+            <input type="radio" id="max" name="excelFunction" value="Max">
+            <label for="max">Max</label><br>
+            <input type="radio" id="min" name="excelFunction" value="Min">
+            <label for="min">Min</label><br><br>
+
+            <button type="button" id="calculate-btn">Calculate</button>
+        </form>
+
+        <div id="excel-output">Result will be printed here</div>
+    </main>
+    <footer>
+        <p>ILAC & EFREI - HTML, CSS, and JavaScript Assignment</p>
+    </footer>
+    <script src="./assets/main.js"></script>
+</body>
+</html>
